@@ -102,3 +102,30 @@ helm upgrade --install \
   --set TEXT="Hello Barcamp 2.0" \
   --wait
 ```
+
+## Backend App
+
+We have a app in the Docker image `ondrejsika/counter` which listen on port 80 and have those configuration environment variables:
+
+- `REDIS` - Redis host (default: 127.0.0.1)
+- `EXTRA_TEXT` - Extra text to display (default: '')
+
+Source: https://github.com/ondrejsika/counter
+
+## Create Deployment for Backend App
+
+```zsh
+kubectl apply -f backend-deploy.yml
+```
+
+## Create Service for Backend App
+
+```zsh
+kubectl apply -f backend-svc.yml
+```
+
+## Create Ingress for Backend App
+
+```zsh
+kubectl apply -f backend-ing.yml
+```
