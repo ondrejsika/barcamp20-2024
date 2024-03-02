@@ -129,3 +129,16 @@ kubectl apply -f backend-svc.yml
 ```zsh
 kubectl apply -f backend-ing.yml
 ```
+
+## Deploy Redis
+
+```zsh
+kubectl apply -f redis-sts.yml
+kubectl apply -f redis-svc.yml
+```
+
+and configure Hedis host in backend app
+
+```zsh
+kubectl apply -f backend-deploy-2.yml
+```
