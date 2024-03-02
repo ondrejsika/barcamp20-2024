@@ -1,6 +1,6 @@
 [Ondrej Sika (sika.io)](https://sika.io) | <ondrej@sika.io>
 
-# barcamp20-2024
+# Kubernetes jako nejjednodussi zpusob jak provozovat aplikace nejen v cloudu
 
 ## Setup Mac
 
