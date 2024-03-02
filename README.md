@@ -142,3 +142,21 @@ and configure Hedis host in backend app
 ```zsh
 kubectl apply -f backend-deploy-2.yml
 ```
+
+## Frontend App
+
+We have a frontend app in the Docker image `ghcr.io/ondrejsika/counter-frontend` which listen on port 3000 and have those configuration environment variables:
+
+- `API_ORIGIN` - Origin of the API server (default: http://127.0.0.1)
+- `FONT_COLOR` - Color of the counter text (default: #000000, black)
+- `BACKGROUND_COLOR` - Color of the counter background (default: #ffffff, white)
+
+Source: https://github.com/ondrejsika/counter-frontend
+
+## Deploy Frontend App
+
+```zsh
+kubectl apply -f frontend-deploy.yml
+kubectl apply -f frontend-svc.yml
+kubectl apply -f frontend-ing.yml
+```
