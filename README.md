@@ -1,3 +1,5 @@
+[Ondrej Sika (sika.io)](https://sika.io) | <ondrej@sika.io>
+
 # barcamp20-2024
 
 ## Setup Mac
