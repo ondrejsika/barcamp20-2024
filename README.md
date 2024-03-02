@@ -118,16 +118,56 @@ Source: https://github.com/ondrejsika/counter
 kubectl apply -f backend-deploy.yml
 ```
 
+## See the Deployment
+
+```zsh
+kubectl get deploy
+```
+
+## See the Pods
+
+```zsh
+kubectl get pods
+```
+
+## See Deloyments & Pods
+
+```zsh
+kubectl get deploy,pods
+```
+
+## See the Logs
+
+```zsh
+kubectl logs -f <pod-name>
+```
+
+```zsh
+kubectl logs -f deployment/backend
+```
+
 ## Create Service for Backend App
 
 ```zsh
 kubectl apply -f backend-svc.yml
 ```
 
+## See the Service
+
+```zsh
+kubectl get svc
+```
+
 ## Create Ingress for Backend App
 
 ```zsh
 kubectl apply -f backend-ing.yml
+```
+
+## See the Ingress
+
+```zsh
+kubectl get ing
 ```
 
 ## Deploy Redis
@@ -159,4 +199,16 @@ Source: https://github.com/ondrejsika/counter-frontend
 kubectl apply -f frontend-deploy.yml
 kubectl apply -f frontend-svc.yml
 kubectl apply -f frontend-ing.yml
+```
+
+## See All Workload and services
+
+```zsh
+kubectl get all
+```
+
+## See All Workload and services with Ingresses
+
+```zsh
+kubectl get all,ing
 ```
