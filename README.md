@@ -212,3 +212,17 @@ kubectl get all
 ```zsh
 kubectl get all,ing
 ```
+
+## Clean Up
+
+## Uninstall Hello World
+
+```zsh
+helm uninstall hello-world
+```
+
+## Uninstall Our Apps
+
+```zsh
+kubectl delete deploy,svc,ing,sts --all
+```
